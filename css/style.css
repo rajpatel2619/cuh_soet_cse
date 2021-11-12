@@ -33,10 +33,10 @@
 	padding-top: 25px;
 }
 .user-p img {
-	width: 100px;
+	width: 140px;
 	border-radius: 50%;
 }
-.user-p h4 {
+.user-p h5,h6 {
 	color: #ccc;
 	padding: 5px 0;
 
