@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Classes</title>
+	<title>Daily Attandance</title>
 
 	<link rel="icon" href="./img/cuhlogo.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@ if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
 </script>
-	<link rel="stylesheet" href="css/class.css">
+	<link rel="stylesheet" href="css/attandance_redirect.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -77,10 +77,10 @@ if ( window.history.replaceState ) {
 			</ul>
 		</nav>
 		<section class="main-section">
-			<?php include("./components/class.php") ?>
+			<?php include("./components/attandance_redirect.php") ?>
 		</section>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
 </body>
 </html>

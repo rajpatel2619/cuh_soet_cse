@@ -72,7 +72,7 @@ $run = mysqli_query($conn,$query);
     <input type="text" name="year" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Starting Year of the Batch. ex:- 2018" required>
   </div>
  
-  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" name="submit" class="btn btn-info">Submit</button>
 </form>
 	</p>     
 
@@ -90,11 +90,10 @@ $run = mysqli_query($conn,$query);
 		$run1 = mysqli_query($conn,$query1);
 
 		if($run1){
-			echo "yes";
-			header('location:batches.php');
-		}else{
-			echo "no";
-		}
+			echo "<meta http-equiv='refresh' content='0'>";
+				  }else{
+			// echo "no";
+		      }
 	
 
 	}

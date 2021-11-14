@@ -1,4 +1,10 @@
 .main-section{
-	padding: 30px;
-	font-size: 1.3em;
+	padding-left: 25px;
+	font-size: 1.2em;
+	width: 80%;
+}
+
+.c-name{
+	color :teal !important;
+	/* font-size: 2em; */
 }

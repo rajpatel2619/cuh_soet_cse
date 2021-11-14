@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Classes</title>
+	<title>Attandance Stats</title>
 
 	<link rel="icon" href="./img/cuhlogo.png" type="image/gif" sizes="16x16">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script>
@@ -11,7 +14,7 @@ if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
 </script>
-	<link rel="stylesheet" href="css/class.css">
+	<link rel="stylesheet" href="css/attandance_record.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -57,7 +60,8 @@ if ( window.history.replaceState ) {
 					</a>
 				</li>
 				<li>
-				<a href="attandance_records.php?bid=1&cid=1&sd=<?php echo date('Y-m-d', strtotime(' -1 month'));?>&ld=<?php echo date('Y-m-d'); ?>">
+				
+					<a href="attandance_records.php?bid=1&cid=1&sd=<?php echo date('Y-m-d', strtotime(' -1 month'));?>&ld=<?php echo date('Y-m-d'); ?>">
 						<i class="fa fa-file" aria-hidden="true"></i>
 						<span>Attandance</span>
 					</a>
@@ -77,7 +81,7 @@ if ( window.history.replaceState ) {
 			</ul>
 		</nav>
 		<section class="main-section">
-			<?php include("./components/class.php") ?>
+			<?php include("./components/attandance_record.php") ?>
 		</section>
 	</div>
 

@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Dashboard</title>
+
+	<link rel="icon" href="./img/cuhlogo.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
@@ -37,15 +39,21 @@
 					</a>
 				</li>
 				<li>
-					<a href="classes.php">
+					<a href="classes.php?batch=2018">
 						<i class="fa fa-laptop" aria-hidden="true"></i>
 						<span>Classes</span>
 					</a>
 				</li>
 				<li>
-					<a href="students.php">
+					<a href="students.php?batch=2018">
 						<i class="fa fa-users" aria-hidden="true"></i>
 						<span>Students</span>
+					</a>
+				</li>
+				<li>
+				<a href="attandance_records.php?bid=1&cid=1&sd=<?php echo date('Y-m-d', strtotime(' -1 month'));?>&ld=<?php echo date('Y-m-d'); ?>">
+						<i class="fa fa-file" aria-hidden="true"></i>
+						<span>Attandance</span>
 					</a>
 				</li>
 				<!-- <li>

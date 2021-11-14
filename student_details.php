@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Classes</title>
+	<title>Student Details</title>
 
 	<link rel="icon" href="./img/cuhlogo.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@ if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
 </script>
-	<link rel="stylesheet" href="css/class.css">
+	<link rel="stylesheet" href="css/student_detail.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -77,7 +77,7 @@ if ( window.history.replaceState ) {
 			</ul>
 		</nav>
 		<section class="main-section">
-			<?php include("./components/class.php") ?>
+			<?php include("./components/student_detail.php") ?>
 		</section>
 	</div>
 
