@@ -36,7 +36,7 @@ if ( window.history.replaceState ) {
 			</div>
 			<ul>
 				<li>
-					<a href="dashboard.php">
+					<a href="index.php">
 						<i class="fa fa-desktop" aria-hidden="true"></i>
 						<span>Dashboard</span>
 					</a>
