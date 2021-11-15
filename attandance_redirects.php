@@ -29,7 +29,7 @@ if ( window.history.replaceState ) {
 		<nav class="side-bar">
 			<div class="user-p">
 				<img src="img/cuhlogo.png">
-				<h5>CSE - SOET - CUH</h5>
+				<h6>CSE - SOET - CUH</h6>
 			</div>
 			<ul>
 				<li>
