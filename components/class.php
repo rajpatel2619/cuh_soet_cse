@@ -84,7 +84,7 @@ $run4 = mysqli_query($conn,$query4);
         $dte = substr($row3['creation_date'],0,10);
 				echo "<th scope='row'>{$i}</th>";
         ?>  
-				<td><a href="./class_details.php?cid=<?php echo $row3['id'] ?>&bid=<?php echo $row3['batch_id'] ?>" class="c-name"><?php echo $row3['name'] ?><a></td>
+				<td><a href="./class_settings.php?cid=<?php echo $row3['id'] ?>" class="c-name"><?php echo $row3['name'] ?><a></td>
         <?php
 				// echo "<td>{$row3['name']}</td>";
 				echo "<td>{$ub} - {$ubl}</td>";
