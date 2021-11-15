@@ -1,5 +1,5 @@
 on: push
-name: 🚀 Deploy Dnovo website on push
+name: 🚀 Deploying project website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy

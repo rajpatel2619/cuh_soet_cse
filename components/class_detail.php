@@ -33,8 +33,8 @@ $bid = $_GET['bid'];
    $count1 = mysqli_num_rows($run1); 
    
    if($count1>0){
-    // echo "<p class='msg'>You have already filled todays attandance. The link will be open in next class timings. Thank You..</p>";
-    header('location:attandance_redirects.php?cid='.$cid.'&bid='.$bid);
+    echo "<p class='msg'>You have already filled todays attandance. The link will be open in next class timings. Thank You..</p>";
+    // header('location:attandance_redirects.php?cid='.$cid.'&bid='.$bid);
    }
   else{
     // echo "not submitted yet";
