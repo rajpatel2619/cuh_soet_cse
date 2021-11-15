@@ -51,7 +51,8 @@ $bid = $_GET['bid'];
         $run3 = mysqli_query($conn,$query3);
         
       }
-      header('location:http://projects.itsmeraj.in/attandance_redirects.php?cid='.$cid.'&bid='.$bid);
+      ?><script> window.location.href = "attandance_redirects.php?cid=<?php echo $cid?>&bid=<?php echo $bid?>" </script><?php
+      // header('location:http://projects.itsmeraj.in/attandance_redirects.php?cid='.$cid.'&bid='.$bid);
     }
 
     

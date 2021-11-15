@@ -87,7 +87,8 @@ while($row3 = mysqli_fetch_array($run3)){
 		$run1 = mysqli_query($conn,$query1);
 
 		if($run1){
-      header('location:http://projects.itsmeraj.in/students.php?batch='.$sbsy);
+      ?><script> window.location.href = "students.php?batch=<?php echo $sbsy?>" </script><?php
+      // header('location:students.php?batch='.$sbsy);
 //       echo "<meta http-equiv='refresh' content='0'>";
 		}else{
       echo "no";
