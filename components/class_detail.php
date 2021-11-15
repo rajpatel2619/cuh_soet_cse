@@ -51,7 +51,7 @@ $bid = $_GET['bid'];
         $run3 = mysqli_query($conn,$query3);
         
       }
-      header('location:attandance_redirects.php?cid='.$cid.'&bid='.$bid);
+      header('location:http://projects.itsmeraj.in/attandance_redirects.php?cid='.$cid.'&bid='.$bid);
     }
 
     
