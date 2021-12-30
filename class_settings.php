@@ -69,7 +69,7 @@ if ( window.history.replaceState ) {
 					</a>
 				</li> -->
 				<li>
-					<a href="localhost:3001">
+					<a href="http://localhost:3001/">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
