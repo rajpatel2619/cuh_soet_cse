@@ -159,7 +159,7 @@ $run4 = mysqli_query($conn,$query4);
     // echo $cname.$ciid.$csem;
 
 
-    $ck2 = "select * from `classes` where name='$cname' and semester='$csem' ";
+    $ck2 = "select * from `classes` where name='$cname' and semester='$csem' and batch_id='$ciid' ";
 		$rn2 = mysqli_query($conn,$ck2);
 		$nm2 = mysqli_num_rows($rn2);
 		if($nm2>0){
