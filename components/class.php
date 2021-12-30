@@ -157,6 +157,16 @@ $run4 = mysqli_query($conn,$query4);
 		$ciid = $_POST['c-year'];
 		$csem = $_POST['c-sem'];
     // echo $cname.$ciid.$csem;
+
+
+    $ck2 = "select * from `classes` where name='$cname' and semester='$csem' ";
+		$rn2 = mysqli_query($conn,$ck2);
+		$nm2 = mysqli_num_rows($rn2);
+		if($nm2>0){
+			echo '<script>alert("Given class is already exists for the selected batch!")</script>';
+  
+		}else{
+
 		$query1 = "INSERT INTO `classes` (`batch_id`,`semester`,`name`,`creation_date`) VALUES ('$ciid','$csem','$cname',NOW())";
 		$run1 = mysqli_query($conn,$query1);
 
@@ -167,7 +177,7 @@ $run4 = mysqli_query($conn,$query4);
       // echo "no";
     }
 	
-
+  }
 	}
 
 ?>

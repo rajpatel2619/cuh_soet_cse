@@ -164,6 +164,14 @@ $run4 = mysqli_query($conn,$query4);
 		$croll = $_POST['c-roll'];
 		$cmobile = $_POST['c-mobile'];
     // echo $cname.$cbatch.$cemail.$croll.$cmobile;
+    $ck2 = "select * from `students` where roll_number='$croll'";
+		$rn2 = mysqli_query($conn,$ck2);
+		$nm2 = mysqli_num_rows($rn2);
+		if($nm2>0){
+			echo '<script>alert("Student Data Already Exists!")</script>';
+  
+		}else{
+
 		$query1 = "INSERT INTO `students` (`batch_id`,`email`,`mobile`,`roll_number`,`name`,`date`) VALUES ('$cbatch','$cemail','$cmobile','$croll','$cname',NOW())";
 		$run1 = mysqli_query($conn,$query1);
 
@@ -173,7 +181,7 @@ $run4 = mysqli_query($conn,$query4);
 		}else{
       // echo "no";
     }
-	
+    }
 
 	}
 

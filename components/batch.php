@@ -85,15 +85,23 @@ $run = mysqli_query($conn,$query);
 <?php
 	if(isset($_POST['submit'])){
 		$year = $_POST['year'];
+		$ck2 = "select * from `batches` where year='$year'";
+		$rn2 = mysqli_query($conn,$ck2);
+		$nm2 = mysqli_num_rows($rn2);
+		if($nm2>0){
+			echo '<script>alert("Batch Already Exists!")</script>';
+  
+		}else{
 
-		$query1 = "INSERT INTO `batches` (`year`,`creation_date`) VALUES ('$year',NOW()) ";
-		$run1 = mysqli_query($conn,$query1);
-
-		if($run1){
-			echo "<meta http-equiv='refresh' content='0'>";
-				  }else{
-			// echo "no";
-		      }
+			$query1 = "INSERT INTO `batches` (`year`,`creation_date`) VALUES ('$year',NOW()) ";
+			$run1 = mysqli_query($conn,$query1);
+			
+			if($run1){
+				echo "<meta http-equiv='refresh' content='0'>";
+			}else{
+				// echo "no";
+			}
+		}
 	
 
 	}
